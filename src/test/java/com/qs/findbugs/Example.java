@@ -13,6 +13,7 @@ public class Example {
 		System.out.println("system out");
 		System.out.println("system out");
 		System.out.println("system out");
+		new Exception().printStackTrace();
 	}
 	
 	public void run() {
