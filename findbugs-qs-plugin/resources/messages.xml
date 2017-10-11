@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MessageCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:noNamespaceSchemaLocation="http://findsecbugs.h3xstream.com/messagecollection.xsd">
+    <Detector class="com.qs.findbugs.ForbidSystemOutClass" >
+        <Details>
+            <![CDATA[
+				<p>detector decription
+            ]]>
+        </Details>
+    </Detector>
+
+    <BugPattern type="SYSTEM_OUT_ERROR">
+        <ShortDescription>my short decription</ShortDescription>
+        <LongDescription>my long decription</LongDescription>
+
+        <Details>
+            <![CDATA[
+				<p> system out error
+            ]]>
+        </Details>
+    </BugPattern>
+
+    <BugCode abbrev="SFC"> system out error</BugCode>
+</MessageCollection>

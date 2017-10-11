@@ -1,0 +1,8 @@
+<FindbugsPlugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:noNamespaceSchemaLocation="https://findbugs.googlecode.com/svn-history/r13379/trunk/findbugs/etc/findbugsplugin.xsd"
+                pluginid="com.qs.findbugs"
+                defaultenabled="true"
+                provider="test">
+    <Detector class="com.qs.findbugs.ForbidSystemOutClass" speed="fast" />
+    <BugPattern type="SYSTEM_OUT_ERROR" abbrev="SFC" category="CORRECTNESS" />
+</FindbugsPlugin>
