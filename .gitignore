@@ -23,3 +23,6 @@ hs_err_pid*
 /findbugs-qs-plugin/.idea
 /findbugs-qs-plugin/target
 /findbugs-qs-plugin/findBugs.iml
+/.idea
+/target
+/findBugs.iml
