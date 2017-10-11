@@ -20,6 +20,17 @@
             ]]>
         </Details>
     </BugPattern>
+    <BugCode abbrev="SOE"> system out error</BugCode>
 
-    <BugCode abbrev="SFC"> system out error</BugCode>
+    <BugPattern type="PRINTSTACKTRACE_ERROR">
+        <ShortDescription>printStackTrace error decription</ShortDescription>
+        <LongDescription>printStackTrace error decription</LongDescription>
+
+        <Details>
+            <![CDATA[
+				<p> printStackTrace error
+            ]]>
+        </Details>
+    </BugPattern>
+    <BugCode abbrev="PSTE"> printStackTrace error</BugCode>
 </MessageCollection>

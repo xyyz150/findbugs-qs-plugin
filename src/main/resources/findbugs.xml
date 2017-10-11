@@ -3,6 +3,7 @@
                 pluginid="com.qs.findbugs"
                 defaultenabled="true"
                 provider="test">
-    <Detector class="com.qs.findbugs.ForbidSystemOutClass" speed="fast" />
-    <BugPattern type="SYSTEM_OUT_ERROR" abbrev="SFC" category="CORRECTNESS" />
+    <Detector class="com.qs.findbugs.ForbidSystemOutClass" speed="fast" reports="SYSTEM_OUT_ERROR,PRINTSTACKTRACE_ERROR" />
+    <BugPattern type="SYSTEM_OUT_ERROR" abbrev="SOE" category="CORRECTNESS" />
+    <BugPattern type="PRINTSTACKTRACE_ERROR" abbrev="PSTE" category="CORRECTNESS" />
 </FindbugsPlugin>

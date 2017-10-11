@@ -23,14 +23,22 @@ public class ForbidSystemOutClass extends OpcodeStackDetector {
     public void sawOpcode(int seen) {  
 
     	if (seen == GETSTATIC) {
-    		
+
             if ("java/lang/System".equals(getClassConstantOperand())
                     && ("out".equals(getNameConstantOperand()) || "error".equals(getNameConstantOperand()))) {
             	
             	bugReporter.reportBug( new BugInstance("SYSTEM_OUT_ERROR", HIGH_PRIORITY) 
             							.addClassAndMethod(this).addSourceLine(this)); 
-            }  
-        }  
+            }
+        }
+        if(seen==INVOKEVIRTUAL){
+            if ("java/lang/Exception".equals(getClassConstantOperand())
+                    && ("printStackTrace".equals(getNameConstantOperand()))) {
+
+                bugReporter.reportBug( new BugInstance("PRINTSTACKTRACE_ERROR", HIGH_PRIORITY)
+                        .addClassAndMethod(this).addSourceLine(this));
+            }
+        }
   
   
     }  
